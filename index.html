@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bellariobranco</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Bella Rio Branco</div>
+      <div class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <button class="menu-btn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <header id="inicio" class="hero">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"
+            style="background-image: url(img/ace8d8bb_original.webp)">
+          </div>
+          <div class="swiper-slide"
+            style="background-image: url(img/9e2c29fb_original.webp)">
+          </div>
+          <div class="swiper-slide"
+            style="background-image: url(img/9406cf29_original.webp)">  
+          </div>
+          <div class="swiper-slide"
+            style="background-image: url(img/5ee12143_original.webp)"> 
+          </div>
+          <div class="swiper-slide"
+           style="background-image: url(img/b5973bd7_original.webp)"> 
+          </div>
+          <div class="swiper-slide"
+           style="background-image: url(img/c65684e6_original.webp)"> 
+          </div>
+         <div class="swiper-slide"
+           style="background-image: url(img/d0558432_original.webp)"> 
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </header>
+
+    <section id="sobre" class="sobre-section">
+      <div class="sobre-grid">
+        <div class="sobre-imagem">
+          <img
+            src="img/image01.webp"
+            alt="Nossa História" />
+        </div>
+        <div class="sobre-texto">
+          <h2>Bem Vindo!</h2>
+          <p>Venha Conhecer a maior padaria do Acre com mix completo de produtos e serviços.</p>
+          <p>Cada produto é preparado com ingredientes selecionados e técnicas
+            tradicionais, garantindo qualidade e sabor incomparáveis.</p>
+          <div class="destaques">
+            <div class="destaque-item">
+              <i class="fas fa-bread-slice"></i>
+              <h3>Pães Artesanais</h3>
+            </div>
+            <div class="destaque-item">
+              <i class="fas fa-utensils"></i>
+              <h3>Pratos Especiais</h3>
+            </div>
+            <div class="destaque-item">
+              <i class="fas fa-coffee"></i>
+              <h3>Café Premium</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio" class="cardapio-section">
+      <h2>Nosso Cardápio</h2>
+      <div class="categorias">
+        <button class="categoria-btn ativo"
+          data-categoria="todos">Todos</button>
+        <button class="categoria-btn" data-categoria="paes">Pães</button>
+        <button class="categoria-btn" data-categoria="doces">Doces</button>
+        <button class="categoria-btn" data-categoria="pratos">Pratos</button>
+      </div>
+      <div class="cardapio-grid">
+        <div class="cardapio-item" data-categoria="paes">
+          <img
+            src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+            alt="Pães Artesanais" />
+          <div class="item-info">
+            <h3>Pães Artesanais</h3>
+            <p>Diversos tipos de pães frescos</p>
+          </div>
+        </div>
+        <div class="cardapio-item" data-categoria="doces">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+            alt="Bolos e Tortas" />
+          <div class="item-info">
+            <h3>Bolos e Tortas</h3>
+            <p>Sobremesas especiais</p>
+          </div>
+        </div>
+        <div class="cardapio-item" data-categoria="pratos">
+          <img
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+            alt="Pratos Executivos" />
+          <div class="item-info">
+            <h3>Pratos Executivos</h3>
+            <p>Almoço especial</p>
+          </div>
+        </div>
+        <div class="cardapio-item" data-categoria="doces">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+            alt="Café e Doces" />
+          <div class="item-info">
+            <h3>Café e Doces</h3>
+            <p>Momentos especiais</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato-section">
+      <div class="contato-container">
+        <div class="contato-info">
+          <h2>Visite-nos</h2>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Av. Ceará, 759 - Cerâmica, Rio Branco - AC</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>(68) 3229-1386</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>contato@bellariobranco.com.br</p>
+          </div>
+          <div class="redes-sociais">
+            <a href="https://www.facebook.com/bellariobrancopadaria" target="_blank" aria-label="Facebook"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/bellariobrancopadaria/" target="_blank" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.1922114529094!2d-67.80310853620487!3d-9.972367547369796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8d626f4428fb%3A0x76aecf3c879fca8c!2sPadaria%20Bella%20Rio%20Branco!5e0!3m2!1spt-BR!2sbr!4v1736735859474!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div class="footer-logo">Bella Rio Branco</div>
+            <p>Tradição em panificação e gastronomia, trazendo o
+              melhor da culinária para sua mesa.</p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horário de Funcionamento</h3>
+            <ul class="horario-lista">
+              <li><span>Segunda - Sexta:</span> 06h às 22:30h</li>
+              <li><span>Sábados:</span> 06h às 22:30h</li>
+              <li><span>Domingos:</span> 06h às 22:30h</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul class="links-rapidos">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#cardapio">Cardápio</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <ul class="contato-lista">
+              <li><i class="fas fa-map-marker-alt"></i>Av. Ceará, 759 - Cerâmica</li>
+              <li><i class="fas fa-phone"></i> (68) 3229-1386</li>
+              <li><i class="fas fa-envelope"></i> contato@bellariobranco.com.br</li>
+            </ul>
+            <div class="redes-sociais">
+              <a href="https://www.facebook.com/bellariobrancopadaria" target="_blank" aria-label="Facebook"><i
+                  class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/bellariobrancopadaria/" target="_blank" aria-label="Instagram"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Bella Rio Branco. Todos os direitos
+            reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
