@@ -37,13 +37,20 @@ categoriaBtns.forEach((btn) => {
 
     // Filtra os itens do cardápio
     cardapioItems.forEach((item) => {
-      if (categoria === "todos" || item.dataset.categoria === categoria) {
+      if (categoria === "" || item.dataset.categoria === categoria) {
         item.style.display = "block";
       } else {
         item.style.display = "none";
       }
     });
   });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const categoriaPaesBtn = document.querySelector(
+    '.categoria-btn[data-categoria="paes"]'
+  );
+  categoriaPaesBtn.click(); //
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
