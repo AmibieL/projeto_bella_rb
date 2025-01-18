@@ -337,23 +337,8 @@ body {
   width: 100%;
   height: 250px;
   object-fit: cover;
-}
 
-.item-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  color: var(--branco);
-  text-align: left;
 }
-
-.item-info h3 {
-  margin-bottom: 0.5rem;
-}
-
 
 .contato-section {
   padding: 6rem 5%;
@@ -395,7 +380,7 @@ body {
 }
 
 .redes-sociais a:hover {
-  color: var(--preto);
+  color: var(--dourado-claro);
 }
 
 .mapa {
@@ -484,6 +469,10 @@ footer {
   align-items: center;
   color: var(--cinza);
   font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: inherit;
 }
 
 .footer-links a {

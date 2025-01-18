@@ -5,21 +5,18 @@ menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// Fechar menu ao clicar em um link
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
   });
 });
 
-// Fechar menu ao clicar fora
 document.addEventListener("click", (e) => {
   if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
     navLinks.classList.remove("active");
   }
 });
 
-// Inicialização do Swiper
 const swiper = new Swiper(".hero-swiper", {
   loop: true,
   autoplay: {
@@ -36,15 +33,13 @@ const swiper = new Swiper(".hero-swiper", {
   },
 });
 
-// Filtro do Cardápio
 const categoriaBtns = document.querySelectorAll(".categoria-btn");
 const cardapioItems = document.querySelectorAll(".cardapio-item");
 
 categoriaBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // Remove classe ativo de todos os botões
     categoriaBtns.forEach((b) => b.classList.remove("ativo"));
-    // Adiciona classe ativo ao botão clicado
+
     btn.classList.add("ativo");
 
     const categoria = btn.dataset.categoria;
@@ -64,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const categoriaPaesBtn = document.querySelector(
     '.categoria-btn[data-categoria="paes"]'
   );
-  categoriaPaesBtn.click(); //
+  categoriaPaesBtn.click();
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
